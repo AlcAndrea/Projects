@@ -28,4 +28,4 @@ def printLyrics(filename):
         time.sleep(delays_after_line)
 
 if __name__=="__main__":
-        printLyrics("RockThatBody.txt")  # just point to your text file  
+        printLyrics("Discord Shawty.txt")  # just point to your text file
