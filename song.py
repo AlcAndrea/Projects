@@ -6,32 +6,40 @@ from time import sleep
 import time
 
 def printLyrics():
+
     lines = [
-        ("I wanna da-",0.06),
-        ("I wanna dance in the lights",0.05),
-        ("I wanna ro-",0.07),
-        ("I wanna rock your body",0.08),
-        ("I wanna go",0.08),
-        ("I wanna go for a ride",0.068),
-        ("Hop in the music and",0.07),
-        ("Rock your body",0.08),
-        ("Rock that body",0.069),
-        ("Come on, come on",0.035),
-        ("Rock that body", 0.05),
-        ("Rock your body",0.03),
-        ("Rock that body",0.049),
-        ("Come on, come on",0.035),
-        ("Rock that body",0.08)
+        "I wanna da-",
+        "I wanna dance in the lights",
+        "I wanna ro-",
+        "I wanna rock your body",
+        "I wanna go",
+        "I wanna go for a ride",
+        "Hop in the music and",
+        "Rock your body",
+        "Rock that body",
+        "Come on, come on",
+        "Rock that body",
+        "Rock your body",
+        "Rock that body",
+        "Come on, come on",
+        "Rock that body",
     ]
-    delays_after_line = [0.5] * len(lines)
+
+    target_line_duration = 1.5
+
+    delays_after_line = 0.5
     
-    for i, (line, char_delay) in enumerate(lines):
+    for line in lines:
+        # Auto calculating per-character delay
+        char_delay = target_line_duration / len(line)
+
         for char in line:
             print(char, end="")
             sys.stdout.flush()
             time.sleep(char_delay)
+
         print()
-        time.sleep(delays_after_line[i])
+        time.sleep(delays_after_line)
 
 if __name__=="__main__":
-        printLyrics()
+        printLyrics()  
