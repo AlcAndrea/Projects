@@ -1,3 +1,5 @@
+# This program is just a program that I found on Instagram in which uses the rich and time libraries to print
+# out lyrics from Black Eyed Peas song "Rock That Body"
 import sys
 from rich import print
 from time import sleep
