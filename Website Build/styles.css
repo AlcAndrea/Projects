@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b0c4de;
+}
+
+ul li{
+    float: right;
+}
+
+a{
+    display: block;
+    color:black;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+ul a:hover{
+    background-color: #7795bc;
+    color: whitesmoke;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
