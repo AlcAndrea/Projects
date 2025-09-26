@@ -3,16 +3,14 @@
 import random
 from collections import Counter
 
-someWords = '''apple banana mango strawberry 
-orange grape pineapple apricot lemon coconut watermelon 
-cherry papaya berry peach lychee muskmelon'''
+someWords = '''brimstone phoenix sage sova viper cypher reyna killjoy breach omen chamber neon fade harbor gekko deadlock iso vyse tejo waylay'''
 
 someWords = someWords.split(' ')
 # randomly choose a secret word from our "someWords" LIST.
 word = random.choice(someWords)
 
 if __name__ == '__main__':
-    print('Guess the word! HINT: word is a name of a fruit')
+    print('Guess the word! HINT: The word is a Valorant agent')
 
     for i in word:
         # For printing the empty spaces for letters of the word
